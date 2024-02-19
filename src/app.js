@@ -2,10 +2,8 @@ const express = require("express");
 const app = express();
 const Subscriber = require("./models/subscribers");
 
-// Middleware
 app.use(express.json());
 
-// Routes
 app.get("/subscribers", async (req, res) => {
   try {
     const subscribers = await Subscriber.find();
