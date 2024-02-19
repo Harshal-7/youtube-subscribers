@@ -1,0 +1,98 @@
+/* 
+font-family: 'General Sans', sans-serif;
+font-family: 'Cabinet Grotesk', sans-serif;
+font-family: 'Chillax', sans-serif;
+font-family: 'JetBrains Mono', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Bespoke Stencil', sans-serif;
+font-family: 'Britney', cursive;
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-family: "Cabinet Grotesk", sans-serif;
+  background-color: rgb(255, 247, 245);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonsDiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  background: #e44312;
+  border-radius: 999px;
+  box-shadow: #e44312 0 8px 10px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji",
+    NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+    EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", sans-serif;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 1px solid #e44312;
+}
+
+.buttons:hover,
+.buttons:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #e44312;
+  border: 1px solid #e44312;
+  border-radius: 999px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+}
+
+.buttons:active {
+  opacity: 0.5;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputBox {
+  padding: 10px;
+  width: 200px;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #e44312;
+  appearance: none;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  :focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+  }
+}
