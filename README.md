@@ -34,13 +34,14 @@ The key features of this application include:
 ## Setup
 
 1. Install dependencies:
+   Navigate to the project directory and install dependencies using npm:
+
    ```
    npm install
    
-   Navigate to the project directory and install dependencies using npm:
    ```
    
-2. Set up MongoDB:
+3. Set up MongoDB:
   - Install MongoDB on your local machine if you haven't already.
   - Start the MongoDB server.
 
