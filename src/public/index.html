@@ -13,12 +13,28 @@
 
 <body>
     <div class="container">
-        <h1>Welcome to Subscriber App</h1>
+        <div class="headerDiv">
+            <h1 class="Heading">Youtube Subscribers App</h1>
+            <div class="subHeading">
+                Get Youtube Subscribers is a simple api application that makes use of node.js and MongoDB as NoSQL
+                database. <br />
+                The goal of this project is to create an API for there are three routes in it as
+            </div>
+        </div>
         <div class="buttonsDiv">
-            <button class="buttons" onclick="window.location.href='/subscribers'">Subscribers</button>
-            <button class="buttons" onclick="window.location.href='/subscribers/names'">Subscribers Names</button>
+            <div class="labelDiv">
+                <label for="b1">click here to get /subscribers</label>
+                <button id="b1" class="buttons" onclick="window.location.href='/subscribers'">Subscribers</button>
+            </div>
+            <div class="labelDiv">
+                <label for="b2">click here to get /subscribers/names</label>
+                <button id="b2" class="buttons" onclick="window.location.href='/subscribers/names'">Subscribers
+                    Names</button>
+            </div>
+
             <div class="inputContainer">
-                <input class="inputBox" type="text" id="subscriberId" placeholder="Enter subscribers id">
+                <label for="b3">click here to get /subscribers/:id</label>
+                <input id="b3" class="inputBox" type="text" id="subscriberId" placeholder="Enter subscribers id">
                 <button class="buttons" onclick="redirectToSubscriber()">Get details</button>
             </div>
 
